@@ -58,29 +58,28 @@ Implemented Features:
    - Event validity checks
    - Momentum conservation
 
-Potential Additions to Consider:
-1. Event Units and Conversions
+5. ✅  Event Units and Conversions
    - Unit conversion methods
    - Explicit unit handling tests
 
-2. Event Attributes
+6. ✅  Event Attributes
    - Generic attribute handling
    - Custom attribute support
 
-3. Event I/O
+7.   Event I/O
    - Reading/writing events to files
    - Different format support (HepMC3 ASCII, ROOT, etc.)
 
-4. Run Information
+8. Run Information
    - GenRunInfo handling
    - Weight handling
    - Run-level attributes
 
-5. Memory Management
+9. Memory Management
    - Explicit cleanup methods
    - Resource management tests
 
-6. Error Handling
+10. Error Handling
    - More comprehensive error cases
    - Invalid state handling
 
