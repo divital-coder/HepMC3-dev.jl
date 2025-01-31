@@ -1,5 +1,5 @@
 name = "HepMC3"
-uuid = "c9441e08-92f6-e6f7-8703-40bfc73a6532"
+uuid = "f86134f7-8d85-db0c-ac9d-02b703c3bada"
 
 [deps]
 CxxWrap = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"

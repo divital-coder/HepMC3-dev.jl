@@ -7,7 +7,6 @@ The definition of the following types where not found. Use the extra_headers con
 The auto_veto parameter is set to true, generation of the wrappers that would have needed theses types were skipped.
 
 
-HepMC3::GenEventData
 std::map<int,double,std::less<int>,std::allocator<std::pair<const int,double>>>
 
 Class(es) from vetoed_finalizer_classes configuration parameter that were not found:
@@ -46,6 +45,7 @@ HepMC3::VectorStringAttribute
 HepMC3::GenHeavyIon
 HepMC3::GenPdfInfo
 HepMC3::GenCrossSection
+HepMC3::GenEventData
 HepMC3::GenVertex
 HepMC3::GenVertexData
 HepMC3::GenParticleData
@@ -190,6 +190,8 @@ void HepMC3::GenEvent::reserve(const size_t &, const size_t &)
 void HepMC3::GenEvent::clear()
 void HepMC3::GenEvent::set_beam_particles(HepMC3::GenParticlePtr, HepMC3::GenParticlePtr)
 void HepMC3::GenEvent::add_beam_particle(HepMC3::GenParticlePtr)
+void HepMC3::GenEvent::write_data(HepMC3::GenEventData &)
+void HepMC3::GenEvent::read_data(const HepMC3::GenEventData &)
 void HepMC3::IntAttribute::IntAttribute(int)
 bool HepMC3::IntAttribute::from_string(const std::string &)
 bool HepMC3::IntAttribute::to_string(std::string &)

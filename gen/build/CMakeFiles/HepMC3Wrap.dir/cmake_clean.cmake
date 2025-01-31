@@ -22,6 +22,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenCrossSection.cxx.o.d"
   "CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEvent.cxx.o"
   "CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEvent.cxx.o.d"
+  "CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEventData.cxx.o"
+  "CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEventData.cxx.o.d"
   "CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenHeavyIon.cxx.o"
   "CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenHeavyIon.cxx.o.d"
   "CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenParticle.cxx.o"

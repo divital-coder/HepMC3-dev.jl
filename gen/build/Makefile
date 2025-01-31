@@ -439,6 +439,30 @@ cpp/JlHepMC3_GenEvent.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HepMC3Wrap.dir/build.make CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEvent.cxx.s
 .PHONY : cpp/JlHepMC3_GenEvent.cxx.s
 
+cpp/JlHepMC3_GenEventData.o: cpp/JlHepMC3_GenEventData.cxx.o
+.PHONY : cpp/JlHepMC3_GenEventData.o
+
+# target to build an object file
+cpp/JlHepMC3_GenEventData.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HepMC3Wrap.dir/build.make CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEventData.cxx.o
+.PHONY : cpp/JlHepMC3_GenEventData.cxx.o
+
+cpp/JlHepMC3_GenEventData.i: cpp/JlHepMC3_GenEventData.cxx.i
+.PHONY : cpp/JlHepMC3_GenEventData.i
+
+# target to preprocess a source file
+cpp/JlHepMC3_GenEventData.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HepMC3Wrap.dir/build.make CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEventData.cxx.i
+.PHONY : cpp/JlHepMC3_GenEventData.cxx.i
+
+cpp/JlHepMC3_GenEventData.s: cpp/JlHepMC3_GenEventData.cxx.s
+.PHONY : cpp/JlHepMC3_GenEventData.s
+
+# target to generate assembly for a file
+cpp/JlHepMC3_GenEventData.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HepMC3Wrap.dir/build.make CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEventData.cxx.s
+.PHONY : cpp/JlHepMC3_GenEventData.cxx.s
+
 cpp/JlHepMC3_GenHeavyIon.o: cpp/JlHepMC3_GenHeavyIon.cxx.o
 .PHONY : cpp/JlHepMC3_GenHeavyIon.o
 
@@ -1109,6 +1133,9 @@ help:
 	@echo "... cpp/JlHepMC3_GenEvent.o"
 	@echo "... cpp/JlHepMC3_GenEvent.i"
 	@echo "... cpp/JlHepMC3_GenEvent.s"
+	@echo "... cpp/JlHepMC3_GenEventData.o"
+	@echo "... cpp/JlHepMC3_GenEventData.i"
+	@echo "... cpp/JlHepMC3_GenEventData.s"
 	@echo "... cpp/JlHepMC3_GenHeavyIon.o"
 	@echo "... cpp/JlHepMC3_GenHeavyIon.i"
 	@echo "... cpp/JlHepMC3_GenHeavyIon.s"

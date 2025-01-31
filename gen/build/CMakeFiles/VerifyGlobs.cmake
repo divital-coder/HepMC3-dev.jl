@@ -14,6 +14,7 @@ set(OLD_GLOB
   "/home/hurtbadly/Desktop/julia_stuff/high_energy_physics/HepMC3.jl/gen/cpp/JlHepMC3_FourVector.cxx"
   "/home/hurtbadly/Desktop/julia_stuff/high_energy_physics/HepMC3.jl/gen/cpp/JlHepMC3_GenCrossSection.cxx"
   "/home/hurtbadly/Desktop/julia_stuff/high_energy_physics/HepMC3.jl/gen/cpp/JlHepMC3_GenEvent.cxx"
+  "/home/hurtbadly/Desktop/julia_stuff/high_energy_physics/HepMC3.jl/gen/cpp/JlHepMC3_GenEventData.cxx"
   "/home/hurtbadly/Desktop/julia_stuff/high_energy_physics/HepMC3.jl/gen/cpp/JlHepMC3_GenHeavyIon.cxx"
   "/home/hurtbadly/Desktop/julia_stuff/high_energy_physics/HepMC3.jl/gen/cpp/JlHepMC3_GenParticle.cxx"
   "/home/hurtbadly/Desktop/julia_stuff/high_energy_physics/HepMC3.jl/gen/cpp/JlHepMC3_GenParticleData.cxx"

@@ -13,6 +13,7 @@ lib/libHepMC3Wrap.so: \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_FourVector.cxx.o \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenCrossSection.cxx.o \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEvent.cxx.o \
+  CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEventData.cxx.o \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenHeavyIon.cxx.o \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenParticle.cxx.o \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenParticleData.cxx.o \
@@ -40,6 +41,7 @@ lib/libHepMC3Wrap.so: \
   CMakeFiles/HepMC3Wrap.dir/cpp/Jlstd_basic_string.cxx.o \
   /home/hurtbadly/.julia/artifacts/7a508f56099aa725e5f3cd1623d9a33e3787d163/lib/libcxxwrap_julia_stl.so \
   /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/lib/libHepMC3.so.4 \
+  /usr/lib/libz.so \
   /home/hurtbadly/.julia/artifacts/7a508f56099aa725e5f3cd1623d9a33e3787d163/lib/libcxxwrap_julia.so.0.13.3 \
   /home/hurtbadly/.julia/juliaup/julia-1.11.3+0.x64.linux.gnu/lib/libjulia.so.1.11 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libstdc++.so \
@@ -95,6 +97,8 @@ CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenCrossSection.cxx.o:
 
 CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEvent.cxx.o:
 
+CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEventData.cxx.o:
+
 CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenHeavyIon.cxx.o:
 
 CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenParticle.cxx.o:
@@ -148,6 +152,8 @@ CMakeFiles/HepMC3Wrap.dir/cpp/Jlstd_basic_string.cxx.o:
 /home/hurtbadly/.julia/artifacts/7a508f56099aa725e5f3cd1623d9a33e3787d163/lib/libcxxwrap_julia_stl.so:
 
 /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/lib/libHepMC3.so.4:
+
+/usr/lib/libz.so:
 
 /home/hurtbadly/.julia/artifacts/7a508f56099aa725e5f3cd1623d9a33e3787d163/lib/libcxxwrap_julia.so.0.13.3:
 
