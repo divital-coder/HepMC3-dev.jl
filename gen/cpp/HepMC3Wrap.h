@@ -28,13 +28,31 @@ T* get_pointer(const std::shared_ptr<T>& ptr) {
 
 // C-style interface declarations (note the extern "C")
 extern "C" {
-    // Only declare the functions here
+    // FourVector functions
     void* create_fourvector(double x, double y, double z, double t);
-    void* create_genevent(int units);
     double fourvector_px(void* v);
     double fourvector_py(void* v);
     double fourvector_pz(void* v);
     double fourvector_e(void* v);
+
+    // GenEvent functions
+    void* create_genevent(int units);
+
+    // GenParticle functions
+    void* create_particle(void* momentum, int pdg_id, int status);
+    int particle_pid(void* particle);
+    int particle_status(void* particle);
+    void* particle_momentum(void* particle);
+    void set_particle_status(void* particle, int status);
+    void set_particle_momentum(void* particle, void* momentum);
+    
+    // Vertex functions
+    void* create_vertex();
+    void add_particle_in(void* vertex, void* particle);
+    void add_particle_out(void* vertex, void* particle);
+    void set_vertex_status(void* vertex, int status);
+    int vertex_status(void* vertex);
+    void add_vertex_to_event(void* event, void* vertex);
 }
 
 #endif
