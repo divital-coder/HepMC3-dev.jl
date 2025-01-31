@@ -18,7 +18,7 @@ struct JlHepMC3_GenPdfInfo: public Wrapper {
 
   JlHepMC3_GenPdfInfo(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::GenPdfInfo (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenPdfInfo.h:32:7
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenPdfInfo.h:32:7
     jlcxx::TypeWrapper<HepMC3::GenPdfInfo>  t = jlModule.add_type<HepMC3::GenPdfInfo>("HepMC3!GenPdfInfo",
       jlcxx::julia_base_type<HepMC3::Attribute>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::GenPdfInfo>>(new jlcxx::TypeWrapper<HepMC3::GenPdfInfo>(jlModule, t));
@@ -30,17 +30,17 @@ struct JlHepMC3_GenPdfInfo: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenPdfInfo::from_string(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenPdfInfo::from_string(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenPdfInfo.h:49:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenPdfInfo.h:49:10
     t.method("from_string", static_cast<bool (HepMC3::GenPdfInfo::*)(const std::string &) >(&HepMC3::GenPdfInfo::from_string));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenPdfInfo::to_string(std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenPdfInfo::to_string(std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenPdfInfo.h:52:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenPdfInfo.h:52:10
     t.method("to_string", static_cast<bool (HepMC3::GenPdfInfo::*)(std::string &)  const>(&HepMC3::GenPdfInfo::to_string));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenPdfInfo::set(const int &, const int &, const double &, const double &, const double &, const double &, const double &, const int &, const int &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenPdfInfo::set(const int &, const int &, const double &, const double &, const double &, const double &, const double &, const int &, const int &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenPdfInfo.h:55:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenPdfInfo.h:55:10
     t.method("set", static_cast<void (HepMC3::GenPdfInfo::*)(const int &, const int &, const double &, const double &, const double &, const double &, const double &, const int &, const int &) >(&HepMC3::GenPdfInfo::set));
     t.method("set", [](HepMC3::GenPdfInfo& a, const int & arg0, const int & arg1, const double & arg2, const double & arg3, const double & arg4, const double & arg5, const double & arg6)->void { a.set(arg0, arg1, arg2, arg3, arg4, arg5, arg6); });
     t.method("set", [](HepMC3::GenPdfInfo& a, const int & arg0, const int & arg1, const double & arg2, const double & arg3, const double & arg4, const double & arg5, const double & arg6, const int & arg7)->void { a.set(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7); });
@@ -50,29 +50,29 @@ struct JlHepMC3_GenPdfInfo: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenPdfInfo::operator==(const HepMC3::GenPdfInfo &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenPdfInfo::operator==(const HepMC3::GenPdfInfo &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenPdfInfo.h:59:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenPdfInfo.h:59:10
     t.method("==", static_cast<bool (HepMC3::GenPdfInfo::*)(const HepMC3::GenPdfInfo &)  const>(&HepMC3::GenPdfInfo::operator==));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenPdfInfo::operator!=(const HepMC3::GenPdfInfo &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenPdfInfo::operator!=(const HepMC3::GenPdfInfo &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenPdfInfo.h:60:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenPdfInfo.h:60:10
     t.method("!=", static_cast<bool (HepMC3::GenPdfInfo::*)(const HepMC3::GenPdfInfo &)  const>(&HepMC3::GenPdfInfo::operator!=));
 
     module_.unset_override_module();
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenPdfInfo::is_valid() (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenPdfInfo::is_valid()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenPdfInfo.h:61:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenPdfInfo.h:61:10
     t.method("is_valid", static_cast<bool (HepMC3::GenPdfInfo::*)()  const>(&HepMC3::GenPdfInfo::is_valid));
 
     DEBUG_MSG("Adding scale methods  to provide read access to the field scale (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenPdfInfo.h:40:12
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenPdfInfo.h:40:12
     // signature to use in the veto list: HepMC3::GenPdfInfo::scale
     t.method("scale", [](const HepMC3::GenPdfInfo& a) -> double { return a.scale; });
     t.method("scale", [](HepMC3::GenPdfInfo& a) -> double { return a.scale; });
     t.method("scale", [](const HepMC3::GenPdfInfo* a) -> double { return a->scale; });
     t.method("scale", [](HepMC3::GenPdfInfo* a) -> double { return a->scale; });
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenPdfInfo.h:40:12
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenPdfInfo.h:40:12
     // signature to use in the veto list: HepMC3::GenPdfInfo::scale
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding scale! methods to provide write access to the field scale (" __HERE__ ")");

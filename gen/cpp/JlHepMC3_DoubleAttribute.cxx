@@ -18,7 +18,7 @@ struct JlHepMC3_DoubleAttribute: public Wrapper {
 
   JlHepMC3_DoubleAttribute(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::DoubleAttribute (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:245:7
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:245:7
     jlcxx::TypeWrapper<HepMC3::DoubleAttribute>  t = jlModule.add_type<HepMC3::DoubleAttribute>("HepMC3!DoubleAttribute",
       jlcxx::julia_base_type<HepMC3::Attribute>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::DoubleAttribute>>(new jlcxx::TypeWrapper<HepMC3::DoubleAttribute>(jlModule, t));
@@ -30,27 +30,27 @@ struct JlHepMC3_DoubleAttribute: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepMC3::DoubleAttribute::DoubleAttribute(double) (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:252:5
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:252:5
     t.constructor<double>(/*finalize=*/jlcxx::finalize_policy::yes);
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::DoubleAttribute::from_string(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::DoubleAttribute::from_string(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:255:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:255:10
     t.method("from_string", static_cast<bool (HepMC3::DoubleAttribute::*)(const std::string &) >(&HepMC3::DoubleAttribute::from_string));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::DoubleAttribute::to_string(std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::DoubleAttribute::to_string(std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:262:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:262:10
     t.method("to_string", static_cast<bool (HepMC3::DoubleAttribute::*)(std::string &)  const>(&HepMC3::DoubleAttribute::to_string));
 
     DEBUG_MSG("Adding wrapper for double HepMC3::DoubleAttribute::value() (" __HERE__ ")");
     // signature to use in the veto list: double HepMC3::DoubleAttribute::value()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:271:12
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:271:12
     t.method("value", static_cast<double (HepMC3::DoubleAttribute::*)()  const>(&HepMC3::DoubleAttribute::value));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::DoubleAttribute::set_value(const double &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::DoubleAttribute::set_value(const double &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:276:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:276:10
     t.method("set_value", static_cast<void (HepMC3::DoubleAttribute::*)(const double &) >(&HepMC3::DoubleAttribute::set_value));
   }
 

@@ -17,7 +17,7 @@ struct JlHepMC3_Attribute: public Wrapper {
 
   JlHepMC3_Attribute(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::Attribute (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:44:7
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:44:7
     jlcxx::TypeWrapper<HepMC3::Attribute>  t = jlModule.add_type<HepMC3::Attribute>("HepMC3!Attribute");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::Attribute>>(new jlcxx::TypeWrapper<HepMC3::Attribute>(jlModule, t));
   }
@@ -27,52 +27,52 @@ struct JlHepMC3_Attribute: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::Attribute::from_string(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::Attribute::from_string(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:77:18
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:77:18
     t.method("from_string", static_cast<bool (HepMC3::Attribute::*)(const std::string &) >(&HepMC3::Attribute::from_string));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::Attribute::init() (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::Attribute::init()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:81:18
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:81:18
     t.method("init", static_cast<bool (HepMC3::Attribute::*)() >(&HepMC3::Attribute::init));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::Attribute::init(const HepMC3::GenRunInfo &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::Attribute::init(const HepMC3::GenRunInfo &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:90:18
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:90:18
     t.method("init", static_cast<bool (HepMC3::Attribute::*)(const HepMC3::GenRunInfo &) >(&HepMC3::Attribute::init));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::Attribute::to_string(std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::Attribute::to_string(std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:95:18
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:95:18
     t.method("to_string", static_cast<bool (HepMC3::Attribute::*)(std::string &)  const>(&HepMC3::Attribute::to_string));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::Attribute::is_parsed() (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::Attribute::is_parsed()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:102:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:102:10
     t.method("is_parsed", static_cast<bool (HepMC3::Attribute::*)()  const>(&HepMC3::Attribute::is_parsed));
 
     DEBUG_MSG("Adding wrapper for const std::string & HepMC3::Attribute::unparsed_string() (" __HERE__ ")");
     // signature to use in the veto list: const std::string & HepMC3::Attribute::unparsed_string()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:105:24
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:105:24
     t.method("unparsed_string", static_cast<const std::string & (HepMC3::Attribute::*)()  const>(&HepMC3::Attribute::unparsed_string));
 
     DEBUG_MSG("Adding wrapper for const HepMC3::GenEvent * HepMC3::Attribute::event() (" __HERE__ ")");
     // signature to use in the veto list: const HepMC3::GenEvent * HepMC3::Attribute::event()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:108:22
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:108:22
     t.method("event", static_cast<const HepMC3::GenEvent * (HepMC3::Attribute::*)()  const>(&HepMC3::Attribute::event));
 
     DEBUG_MSG("Adding wrapper for HepMC3::GenParticlePtr HepMC3::Attribute::particle() (" __HERE__ ")");
     // signature to use in the veto list: HepMC3::GenParticlePtr HepMC3::Attribute::particle()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:113:20
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:113:20
     t.method("particle", static_cast<HepMC3::GenParticlePtr (HepMC3::Attribute::*)() >(&HepMC3::Attribute::particle));
 
     DEBUG_MSG("Adding wrapper for HepMC3::GenVertexPtr HepMC3::Attribute::vertex() (" __HERE__ ")");
     // signature to use in the veto list: HepMC3::GenVertexPtr HepMC3::Attribute::vertex()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:123:18
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:123:18
     t.method("vertex", static_cast<HepMC3::GenVertexPtr (HepMC3::Attribute::*)() >(&HepMC3::Attribute::vertex));
 
     DEBUG_MSG("Adding wrapper for HepMC3::ConstGenVertexPtr HepMC3::Attribute::vertex() (" __HERE__ ")");
     // signature to use in the veto list: HepMC3::ConstGenVertexPtr HepMC3::Attribute::vertex()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:128:23
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:128:23
     t.method("vertex", static_cast<HepMC3::ConstGenVertexPtr (HepMC3::Attribute::*)()  const>(&HepMC3::Attribute::vertex));
   }
 

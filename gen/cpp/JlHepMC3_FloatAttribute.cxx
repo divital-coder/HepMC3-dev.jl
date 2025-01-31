@@ -18,7 +18,7 @@ struct JlHepMC3_FloatAttribute: public Wrapper {
 
   JlHepMC3_FloatAttribute(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::FloatAttribute (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:292:7
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:292:7
     jlcxx::TypeWrapper<HepMC3::FloatAttribute>  t = jlModule.add_type<HepMC3::FloatAttribute>("HepMC3!FloatAttribute",
       jlcxx::julia_base_type<HepMC3::Attribute>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::FloatAttribute>>(new jlcxx::TypeWrapper<HepMC3::FloatAttribute>(jlModule, t));
@@ -30,27 +30,27 @@ struct JlHepMC3_FloatAttribute: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepMC3::FloatAttribute::FloatAttribute(float) (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:299:5
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:299:5
     t.constructor<float>(/*finalize=*/jlcxx::finalize_policy::yes);
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::FloatAttribute::from_string(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::FloatAttribute::from_string(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:302:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:302:10
     t.method("from_string", static_cast<bool (HepMC3::FloatAttribute::*)(const std::string &) >(&HepMC3::FloatAttribute::from_string));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::FloatAttribute::to_string(std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::FloatAttribute::to_string(std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:309:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:309:10
     t.method("to_string", static_cast<bool (HepMC3::FloatAttribute::*)(std::string &)  const>(&HepMC3::FloatAttribute::to_string));
 
     DEBUG_MSG("Adding wrapper for float HepMC3::FloatAttribute::value() (" __HERE__ ")");
     // signature to use in the veto list: float HepMC3::FloatAttribute::value()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:318:11
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:318:11
     t.method("value", static_cast<float (HepMC3::FloatAttribute::*)()  const>(&HepMC3::FloatAttribute::value));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::FloatAttribute::set_value(const float &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::FloatAttribute::set_value(const float &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:323:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:323:10
     t.method("set_value", static_cast<void (HepMC3::FloatAttribute::*)(const float &) >(&HepMC3::FloatAttribute::set_value));
   }
 

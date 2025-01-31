@@ -17,7 +17,7 @@ struct JlHepMC3_GenEvent: public Wrapper {
 
   JlHepMC3_GenEvent(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::GenEvent (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:47:7
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:47:7
     jlcxx::TypeWrapper<HepMC3::GenEvent>  t = jlModule.add_type<HepMC3::GenEvent>("HepMC3!GenEvent");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::GenEvent>>(new jlcxx::TypeWrapper<HepMC3::GenEvent>(jlModule, t));
   }
@@ -28,292 +28,292 @@ struct JlHepMC3_GenEvent: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::GenEvent(HepMC3::Units::MomentumUnit, HepMC3::Units::LengthUnit) (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:52:5
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:52:5
     t.constructor<HepMC3::Units::MomentumUnit>(/*finalize=*/jlcxx::finalize_policy::yes);
     t.constructor<HepMC3::Units::MomentumUnit, HepMC3::Units::LengthUnit>(/*finalize=*/jlcxx::finalize_policy::yes);
 
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::GenEvent(std::shared_ptr<HepMC3::GenRunInfo>, HepMC3::Units::MomentumUnit, HepMC3::Units::LengthUnit) (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:58:5
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:58:5
     t.constructor<std::shared_ptr<HepMC3::GenRunInfo>>(/*finalize=*/jlcxx::finalize_policy::yes);
     t.constructor<std::shared_ptr<HepMC3::GenRunInfo>, HepMC3::Units::MomentumUnit>(/*finalize=*/jlcxx::finalize_policy::yes);
     t.constructor<std::shared_ptr<HepMC3::GenRunInfo>, HepMC3::Units::MomentumUnit, HepMC3::Units::LengthUnit>(/*finalize=*/jlcxx::finalize_policy::yes);
 
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::GenEvent(const HepMC3::GenEvent &) (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:63:5
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:63:5
     t.constructor<const HepMC3::GenEvent &>(/*finalize=*/jlcxx::finalize_policy::yes);
 
     DEBUG_MSG("Adding wrapper for HepMC3::GenEvent & HepMC3::GenEvent::operator=(const HepMC3::GenEvent &) (" __HERE__ ")");
     // signature to use in the veto list: HepMC3::GenEvent & HepMC3::GenEvent::operator=(const HepMC3::GenEvent &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:69:15
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:69:15
     t.method("assign", static_cast<HepMC3::GenEvent & (HepMC3::GenEvent::*)(const HepMC3::GenEvent &) >(&HepMC3::GenEvent::operator=));
 
     DEBUG_MSG("Adding wrapper for const std::vector<HepMC3::GenParticlePtr> & HepMC3::GenEvent::particles() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<HepMC3::GenParticlePtr> & HepMC3::GenEvent::particles()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:80:40
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:80:40
     t.method("particles", static_cast<const std::vector<HepMC3::GenParticlePtr> & (HepMC3::GenEvent::*)() >(&HepMC3::GenEvent::particles));
 
     DEBUG_MSG("Adding wrapper for const std::vector<HepMC3::GenVertexPtr> & HepMC3::GenEvent::vertices() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<HepMC3::GenVertexPtr> & HepMC3::GenEvent::vertices()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:82:38
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:82:38
     t.method("vertices", static_cast<const std::vector<HepMC3::GenVertexPtr> & (HepMC3::GenEvent::*)() >(&HepMC3::GenEvent::vertices));
 
     DEBUG_MSG("Adding wrapper for int HepMC3::GenEvent::particles_size() (" __HERE__ ")");
     // signature to use in the veto list: int HepMC3::GenEvent::particles_size()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:91:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:91:16
     t.method("particles_size", static_cast<int (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::particles_size));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenEvent::particles_empty() (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenEvent::particles_empty()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:93:17
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:93:17
     t.method("particles_empty", static_cast<bool (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::particles_empty));
 
     DEBUG_MSG("Adding wrapper for int HepMC3::GenEvent::vertices_size() (" __HERE__ ")");
     // signature to use in the veto list: int HepMC3::GenEvent::vertices_size()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:95:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:95:16
     t.method("vertices_size", static_cast<int (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::vertices_size));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenEvent::vertices_empty() (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenEvent::vertices_empty()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:97:17
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:97:17
     t.method("vertices_empty", static_cast<bool (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::vertices_empty));
 
     DEBUG_MSG("Adding wrapper for const std::vector<double> & HepMC3::GenEvent::weights() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<double> & HepMC3::GenEvent::weights()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:105:32
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:105:32
     t.method("weights", static_cast<const std::vector<double> & (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::weights));
 
     DEBUG_MSG("Adding wrapper for std::vector<double> & HepMC3::GenEvent::weights() (" __HERE__ ")");
     // signature to use in the veto list: std::vector<double> & HepMC3::GenEvent::weights()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:107:26
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:107:26
     t.method("weights", static_cast<std::vector<double> & (HepMC3::GenEvent::*)() >(&HepMC3::GenEvent::weights));
 
     DEBUG_MSG("Adding wrapper for double HepMC3::GenEvent::weight(const unsigned long &) (" __HERE__ ")");
     // signature to use in the veto list: double HepMC3::GenEvent::weight(const unsigned long &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:110:12
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:110:12
     t.method("weight", static_cast<double (HepMC3::GenEvent::*)(const unsigned long &)  const>(&HepMC3::GenEvent::weight));
     t.method("weight", [](HepMC3::GenEvent const& a)->double { return a.weight(); });
     t.method("weight", [](HepMC3::GenEvent const* a)->double { return a->weight(); });
 
     DEBUG_MSG("Adding wrapper for double HepMC3::GenEvent::weight(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: double HepMC3::GenEvent::weight(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:114:12
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:114:12
     t.method("weight", static_cast<double (HepMC3::GenEvent::*)(const std::string &)  const>(&HepMC3::GenEvent::weight));
 
     DEBUG_MSG("Adding wrapper for double & HepMC3::GenEvent::weight(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: double & HepMC3::GenEvent::weight(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:121:13
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:121:13
     t.method("weight", static_cast<double & (HepMC3::GenEvent::*)(const std::string &) >(&HepMC3::GenEvent::weight));
 
     DEBUG_MSG("Adding wrapper for const std::vector<std::string> & HepMC3::GenEvent::weight_names() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<std::string> & HepMC3::GenEvent::weight_names()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:130:37
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:130:37
     t.method("weight_names", static_cast<const std::vector<std::string> & (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::weight_names));
 
     DEBUG_MSG("Adding wrapper for std::shared_ptr<HepMC3::GenRunInfo> HepMC3::GenEvent::run_info() (" __HERE__ ")");
     // signature to use in the veto list: std::shared_ptr<HepMC3::GenRunInfo> HepMC3::GenEvent::run_info()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:144:33
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:144:33
     t.method("run_info", static_cast<std::shared_ptr<HepMC3::GenRunInfo> (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::run_info));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::set_run_info(std::shared_ptr<HepMC3::GenRunInfo>) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::set_run_info(std::shared_ptr<HepMC3::GenRunInfo>)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:148:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:148:10
     t.method("set_run_info", static_cast<void (HepMC3::GenEvent::*)(std::shared_ptr<HepMC3::GenRunInfo>) >(&HepMC3::GenEvent::set_run_info));
 
     DEBUG_MSG("Adding wrapper for int HepMC3::GenEvent::event_number() (" __HERE__ ")");
     // signature to use in the veto list: int HepMC3::GenEvent::event_number()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:155:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:155:10
     t.method("event_number", static_cast<int (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::event_number));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::set_event_number(const int &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::set_event_number(const int &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:157:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:157:10
     t.method("set_event_number", static_cast<void (HepMC3::GenEvent::*)(const int &) >(&HepMC3::GenEvent::set_event_number));
 
     DEBUG_MSG("Adding wrapper for const HepMC3::Units::MomentumUnit & HepMC3::GenEvent::momentum_unit() (" __HERE__ ")");
     // signature to use in the veto list: const HepMC3::Units::MomentumUnit & HepMC3::GenEvent::momentum_unit()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:160:32
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:160:32
     t.method("momentum_unit", static_cast<const HepMC3::Units::MomentumUnit & (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::momentum_unit));
 
     DEBUG_MSG("Adding wrapper for const HepMC3::Units::LengthUnit & HepMC3::GenEvent::length_unit() (" __HERE__ ")");
     // signature to use in the veto list: const HepMC3::Units::LengthUnit & HepMC3::GenEvent::length_unit()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:162:30
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:162:30
     t.method("length_unit", static_cast<const HepMC3::Units::LengthUnit & (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::length_unit));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::set_units(HepMC3::Units::MomentumUnit, HepMC3::Units::LengthUnit) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::set_units(HepMC3::Units::MomentumUnit, HepMC3::Units::LengthUnit)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:165:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:165:10
     t.method("set_units", static_cast<void (HepMC3::GenEvent::*)(HepMC3::Units::MomentumUnit, HepMC3::Units::LengthUnit) >(&HepMC3::GenEvent::set_units));
 
     DEBUG_MSG("Adding wrapper for HepMC3::GenHeavyIonPtr HepMC3::GenEvent::heavy_ion() (" __HERE__ ")");
     // signature to use in the veto list: HepMC3::GenHeavyIonPtr HepMC3::GenEvent::heavy_ion()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:168:20
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:168:20
     t.method("heavy_ion", static_cast<HepMC3::GenHeavyIonPtr (HepMC3::GenEvent::*)() >(&HepMC3::GenEvent::heavy_ion));
 
     DEBUG_MSG("Adding wrapper for HepMC3::ConstGenHeavyIonPtr HepMC3::GenEvent::heavy_ion() (" __HERE__ ")");
     // signature to use in the veto list: HepMC3::ConstGenHeavyIonPtr HepMC3::GenEvent::heavy_ion()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:170:25
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:170:25
     t.method("heavy_ion", static_cast<HepMC3::ConstGenHeavyIonPtr (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::heavy_ion));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::set_heavy_ion(HepMC3::GenHeavyIonPtr) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::set_heavy_ion(HepMC3::GenHeavyIonPtr)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:172:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:172:10
     t.method("set_heavy_ion", static_cast<void (HepMC3::GenEvent::*)(HepMC3::GenHeavyIonPtr) >(&HepMC3::GenEvent::set_heavy_ion));
 
     DEBUG_MSG("Adding wrapper for HepMC3::GenPdfInfoPtr HepMC3::GenEvent::pdf_info() (" __HERE__ ")");
     // signature to use in the veto list: HepMC3::GenPdfInfoPtr HepMC3::GenEvent::pdf_info()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:175:19
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:175:19
     t.method("pdf_info", static_cast<HepMC3::GenPdfInfoPtr (HepMC3::GenEvent::*)() >(&HepMC3::GenEvent::pdf_info));
 
     DEBUG_MSG("Adding wrapper for HepMC3::ConstGenPdfInfoPtr HepMC3::GenEvent::pdf_info() (" __HERE__ ")");
     // signature to use in the veto list: HepMC3::ConstGenPdfInfoPtr HepMC3::GenEvent::pdf_info()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:177:24
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:177:24
     t.method("pdf_info", static_cast<HepMC3::ConstGenPdfInfoPtr (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::pdf_info));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::set_pdf_info(HepMC3::GenPdfInfoPtr) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::set_pdf_info(HepMC3::GenPdfInfoPtr)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:179:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:179:10
     t.method("set_pdf_info", static_cast<void (HepMC3::GenEvent::*)(HepMC3::GenPdfInfoPtr) >(&HepMC3::GenEvent::set_pdf_info));
 
     DEBUG_MSG("Adding wrapper for HepMC3::GenCrossSectionPtr HepMC3::GenEvent::cross_section() (" __HERE__ ")");
     // signature to use in the veto list: HepMC3::GenCrossSectionPtr HepMC3::GenEvent::cross_section()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:182:24
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:182:24
     t.method("cross_section", static_cast<HepMC3::GenCrossSectionPtr (HepMC3::GenEvent::*)() >(&HepMC3::GenEvent::cross_section));
 
     DEBUG_MSG("Adding wrapper for HepMC3::ConstGenCrossSectionPtr HepMC3::GenEvent::cross_section() (" __HERE__ ")");
     // signature to use in the veto list: HepMC3::ConstGenCrossSectionPtr HepMC3::GenEvent::cross_section()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:184:29
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:184:29
     t.method("cross_section", static_cast<HepMC3::ConstGenCrossSectionPtr (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::cross_section));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::set_cross_section(HepMC3::GenCrossSectionPtr) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::set_cross_section(HepMC3::GenCrossSectionPtr)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:186:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:186:10
     t.method("set_cross_section", static_cast<void (HepMC3::GenEvent::*)(HepMC3::GenCrossSectionPtr) >(&HepMC3::GenEvent::set_cross_section));
 
     DEBUG_MSG("Adding wrapper for const HepMC3::FourVector & HepMC3::GenEvent::event_pos() (" __HERE__ ")");
     // signature to use in the veto list: const HepMC3::FourVector & HepMC3::GenEvent::event_pos()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:195:23
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:195:23
     t.method("event_pos", static_cast<const HepMC3::FourVector & (HepMC3::GenEvent::*)()  const>(&HepMC3::GenEvent::event_pos));
 
     DEBUG_MSG("Adding wrapper for const std::vector<HepMC3::GenParticlePtr> & HepMC3::GenEvent::beams() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<HepMC3::GenParticlePtr> & HepMC3::GenEvent::beams()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:205:41
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:205:41
     t.method("beams", static_cast<const std::vector<HepMC3::GenParticlePtr> & (HepMC3::GenEvent::*)() >(&HepMC3::GenEvent::beams));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::shift_position_by(const HepMC3::FourVector &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::shift_position_by(const HepMC3::FourVector &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:208:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:208:10
     t.method("shift_position_by", static_cast<void (HepMC3::GenEvent::*)(const HepMC3::FourVector &) >(&HepMC3::GenEvent::shift_position_by));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::shift_position_to(const HepMC3::FourVector &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::shift_position_to(const HepMC3::FourVector &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:211:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:211:10
     t.method("shift_position_to", static_cast<void (HepMC3::GenEvent::*)(const HepMC3::FourVector &) >(&HepMC3::GenEvent::shift_position_to));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenEvent::boost(const HepMC3::FourVector &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenEvent::boost(const HepMC3::FourVector &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:217:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:217:10
     t.method("boost", static_cast<bool (HepMC3::GenEvent::*)(const HepMC3::FourVector &) >(&HepMC3::GenEvent::boost));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenEvent::rotate(const HepMC3::FourVector &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenEvent::rotate(const HepMC3::FourVector &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:219:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:219:10
     t.method("rotate", static_cast<bool (HepMC3::GenEvent::*)(const HepMC3::FourVector &) >(&HepMC3::GenEvent::rotate));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenEvent::reflect(const int) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenEvent::reflect(const int)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:221:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:221:10
     t.method("reflect", static_cast<bool (HepMC3::GenEvent::*)(const int) >(&HepMC3::GenEvent::reflect));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::add_attribute(const std::string &, const std::shared_ptr<HepMC3::Attribute> &, const int &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::add_attribute(const std::string &, const std::shared_ptr<HepMC3::Attribute> &, const int &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:232:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:232:10
     t.method("add_attribute", static_cast<void (HepMC3::GenEvent::*)(const std::string &, const std::shared_ptr<HepMC3::Attribute> &, const int &) >(&HepMC3::GenEvent::add_attribute));
     t.method("add_attribute", [](HepMC3::GenEvent& a, const std::string & arg0, const std::shared_ptr<HepMC3::Attribute> & arg1)->void { a.add_attribute(arg0, arg1); });
     t.method("add_attribute", [](HepMC3::GenEvent* a, const std::string & arg0, const std::shared_ptr<HepMC3::Attribute> & arg1)->void { a->add_attribute(arg0, arg1); });
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::add_attributes(const std::vector<std::string> &, const std::vector<std::shared_ptr<HepMC3::Attribute>> &, const std::vector<int> &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::add_attributes(const std::vector<std::string> &, const std::vector<std::shared_ptr<HepMC3::Attribute>> &, const std::vector<int> &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:238:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:238:10
     t.method("add_attributes", static_cast<void (HepMC3::GenEvent::*)(const std::vector<std::string> &, const std::vector<std::shared_ptr<HepMC3::Attribute>> &, const std::vector<int> &) >(&HepMC3::GenEvent::add_attributes));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::add_attributes(const std::string &, const std::vector<std::shared_ptr<HepMC3::Attribute>> &, const std::vector<int> &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::add_attributes(const std::string &, const std::vector<std::shared_ptr<HepMC3::Attribute>> &, const std::vector<int> &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:244:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:244:10
     t.method("add_attributes", static_cast<void (HepMC3::GenEvent::*)(const std::string &, const std::vector<std::shared_ptr<HepMC3::Attribute>> &, const std::vector<int> &) >(&HepMC3::GenEvent::add_attributes));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::remove_attribute(const std::string &, const int &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::remove_attribute(const std::string &, const int &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:254:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:254:10
     t.method("remove_attribute", static_cast<void (HepMC3::GenEvent::*)(const std::string &, const int &) >(&HepMC3::GenEvent::remove_attribute));
     t.method("remove_attribute", [](HepMC3::GenEvent& a, const std::string & arg0)->void { a.remove_attribute(arg0); });
     t.method("remove_attribute", [](HepMC3::GenEvent* a, const std::string & arg0)->void { a->remove_attribute(arg0); });
 
     DEBUG_MSG("Adding wrapper for std::string HepMC3::GenEvent::attribute_as_string(const std::string &, const int &) (" __HERE__ ")");
     // signature to use in the veto list: std::string HepMC3::GenEvent::attribute_as_string(const std::string &, const int &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:261:17
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:261:17
     t.method("attribute_as_string", static_cast<std::string (HepMC3::GenEvent::*)(const std::string &, const int &)  const>(&HepMC3::GenEvent::attribute_as_string));
     t.method("attribute_as_string", [](HepMC3::GenEvent const& a, const std::string & arg0)->std::string { return a.attribute_as_string(arg0); });
     t.method("attribute_as_string", [](HepMC3::GenEvent const* a, const std::string & arg0)->std::string { return a->attribute_as_string(arg0); });
 
     DEBUG_MSG("Adding wrapper for std::vector<std::string> HepMC3::GenEvent::attribute_names(const int &) (" __HERE__ ")");
     // signature to use in the veto list: std::vector<std::string> HepMC3::GenEvent::attribute_names(const int &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:264:30
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:264:30
     t.method("attribute_names", static_cast<std::vector<std::string> (HepMC3::GenEvent::*)(const int &)  const>(&HepMC3::GenEvent::attribute_names));
     t.method("attribute_names", [](HepMC3::GenEvent const& a)->std::vector<std::string> { return a.attribute_names(); });
     t.method("attribute_names", [](HepMC3::GenEvent const* a)->std::vector<std::string> { return a->attribute_names(); });
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::add_particle(HepMC3::GenParticlePtr) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::add_particle(HepMC3::GenParticlePtr)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:280:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:280:10
     t.method("add_particle", static_cast<void (HepMC3::GenEvent::*)(HepMC3::GenParticlePtr) >(&HepMC3::GenEvent::add_particle));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::add_vertex(HepMC3::GenVertexPtr) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::add_vertex(HepMC3::GenVertexPtr)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:283:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:283:10
     t.method("add_vertex", static_cast<void (HepMC3::GenEvent::*)(HepMC3::GenVertexPtr) >(&HepMC3::GenEvent::add_vertex));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::remove_particle(HepMC3::GenParticlePtr) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::remove_particle(HepMC3::GenParticlePtr)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:291:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:291:10
     t.method("remove_particle", static_cast<void (HepMC3::GenEvent::*)(HepMC3::GenParticlePtr) >(&HepMC3::GenEvent::remove_particle));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::remove_particles(std::vector<HepMC3::GenParticlePtr>) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::remove_particles(std::vector<HepMC3::GenParticlePtr>)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:297:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:297:10
     t.method("remove_particles", static_cast<void (HepMC3::GenEvent::*)(std::vector<HepMC3::GenParticlePtr>) >(&HepMC3::GenEvent::remove_particles));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::remove_vertex(HepMC3::GenVertexPtr) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::remove_vertex(HepMC3::GenVertexPtr)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:302:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:302:10
     t.method("remove_vertex", static_cast<void (HepMC3::GenEvent::*)(HepMC3::GenVertexPtr) >(&HepMC3::GenEvent::remove_vertex));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::add_tree(const std::vector<HepMC3::GenParticlePtr> &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::add_tree(const std::vector<HepMC3::GenParticlePtr> &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:313:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:313:10
     t.method("add_tree", static_cast<void (HepMC3::GenEvent::*)(const std::vector<HepMC3::GenParticlePtr> &) >(&HepMC3::GenEvent::add_tree));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::reserve(const size_t &, const size_t &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::reserve(const size_t &, const size_t &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:318:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:318:10
     t.method("reserve", static_cast<void (HepMC3::GenEvent::*)(const size_t &, const size_t &) >(&HepMC3::GenEvent::reserve));
     t.method("reserve", [](HepMC3::GenEvent& a, const size_t & arg0)->void { a.reserve(arg0); });
     t.method("reserve", [](HepMC3::GenEvent* a, const size_t & arg0)->void { a->reserve(arg0); });
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::clear() (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::clear()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:321:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:321:10
     t.method("clear", static_cast<void (HepMC3::GenEvent::*)() >(&HepMC3::GenEvent::clear));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::set_beam_particles(HepMC3::GenParticlePtr, HepMC3::GenParticlePtr) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::set_beam_particles(HepMC3::GenParticlePtr, HepMC3::GenParticlePtr)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:330:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:330:10
     t.method("set_beam_particles", static_cast<void (HepMC3::GenEvent::*)(HepMC3::GenParticlePtr, HepMC3::GenParticlePtr) >(&HepMC3::GenEvent::set_beam_particles));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::add_beam_particle(HepMC3::GenParticlePtr) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenEvent::add_beam_particle(HepMC3::GenParticlePtr)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:335:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenEvent.h:335:10
     t.method("add_beam_particle", static_cast<void (HepMC3::GenEvent::*)(HepMC3::GenParticlePtr) >(&HepMC3::GenEvent::add_beam_particle));
   }
 

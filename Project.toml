@@ -6,7 +6,9 @@ version = "0.1.0"
 CxxWrap = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"
 HepMC3_jll = "b85c3e40-22db-5268-bacb-02bd65cb4e01"
 Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+WrapIt = "962878d8-9763-11ee-8c14-fbf60c98afae"
 
 [compat]
 CxxWrap = "0.16.0"
 HepMC3_jll = "3.3.0"
+WrapIt = "1.4.0"

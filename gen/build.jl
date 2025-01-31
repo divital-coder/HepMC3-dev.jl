@@ -32,7 +32,7 @@ open(wit, "w") do f
 end
 
 #rc = wrapit(wit, force=true, cmake=false, update=updatemode, verbosity=1)
-rc = run(`wrapit $wit --force -v 1`).exitcode
+rc = run(`../wrapit $wit --force -v 1`).exitcode
 if !isnothing(rc) && rc != 0
     println(stderr, "Failed to produce wrapper code with the wrapit function. Exited with code ", rc, ".")
     exit(rc)

@@ -149,13 +149,13 @@ throw_if_version_incompatibility();
   };
 
   DEBUG_MSG("Adding wrapper for enum HepMC3::Units::MomentumUnit (" __HERE__ ")");
-  // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Units.h:29:10
+  // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Units.h:29:10
   jlModule.add_bits<HepMC3::Units::MomentumUnit>("HepMC3!Units!MomentumUnit", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("HepMC3!Units!MEV", HepMC3::Units::MEV);
   jlModule.set_const("HepMC3!Units!GEV", HepMC3::Units::GEV);
 
   DEBUG_MSG("Adding wrapper for enum HepMC3::Units::LengthUnit (" __HERE__ ")");
-  // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Units.h:32:10
+  // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Units.h:32:10
   jlModule.add_bits<HepMC3::Units::LengthUnit>("HepMC3!Units!LengthUnit", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("HepMC3!Units!MM", HepMC3::Units::MM);
   jlModule.set_const("HepMC3!Units!CM", HepMC3::Units::CM);

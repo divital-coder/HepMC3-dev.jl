@@ -17,7 +17,7 @@ struct JlHepMC3_GenParticleData: public Wrapper {
 
   JlHepMC3_GenParticleData(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::GenParticleData (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenParticleData.h:24:8
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenParticleData.h:24:8
     jlcxx::TypeWrapper<HepMC3::GenParticleData>  t = jlModule.add_type<HepMC3::GenParticleData>("HepMC3!GenParticleData");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::GenParticleData>>(new jlcxx::TypeWrapper<HepMC3::GenParticleData>(jlModule, t));
   }
@@ -27,13 +27,13 @@ struct JlHepMC3_GenParticleData: public Wrapper {
     t.template constructor<>(/*finalize=*/jlcxx::finalize_policy::yes);
 
     DEBUG_MSG("Adding pid methods  to provide read access to the field pid (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenParticleData.h:25:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenParticleData.h:25:16
     // signature to use in the veto list: HepMC3::GenParticleData::pid
     t.method("pid", [](const HepMC3::GenParticleData& a) -> int { return a.pid; });
     t.method("pid", [](HepMC3::GenParticleData& a) -> int { return a.pid; });
     t.method("pid", [](const HepMC3::GenParticleData* a) -> int { return a->pid; });
     t.method("pid", [](HepMC3::GenParticleData* a) -> int { return a->pid; });
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenParticleData.h:25:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenParticleData.h:25:16
     // signature to use in the veto list: HepMC3::GenParticleData::pid
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding pid! methods to provide write access to the field pid (" __HERE__ ")");
@@ -43,13 +43,13 @@ struct JlHepMC3_GenParticleData: public Wrapper {
     t.method("pid!", [](HepMC3::GenParticleData* a, int val) -> int { return a->pid = val; });
 
     DEBUG_MSG("Adding status methods  to provide read access to the field status (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenParticleData.h:26:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenParticleData.h:26:16
     // signature to use in the veto list: HepMC3::GenParticleData::status
     t.method("status", [](const HepMC3::GenParticleData& a) -> int { return a.status; });
     t.method("status", [](HepMC3::GenParticleData& a) -> int { return a.status; });
     t.method("status", [](const HepMC3::GenParticleData* a) -> int { return a->status; });
     t.method("status", [](HepMC3::GenParticleData* a) -> int { return a->status; });
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenParticleData.h:26:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenParticleData.h:26:16
     // signature to use in the veto list: HepMC3::GenParticleData::status
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding status! methods to provide write access to the field status (" __HERE__ ")");
@@ -59,13 +59,13 @@ struct JlHepMC3_GenParticleData: public Wrapper {
     t.method("status!", [](HepMC3::GenParticleData* a, int val) -> int { return a->status = val; });
 
     DEBUG_MSG("Adding is_mass_set methods  to provide read access to the field is_mass_set (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenParticleData.h:27:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenParticleData.h:27:16
     // signature to use in the veto list: HepMC3::GenParticleData::is_mass_set
     t.method("is_mass_set", [](const HepMC3::GenParticleData& a) -> bool { return a.is_mass_set; });
     t.method("is_mass_set", [](HepMC3::GenParticleData& a) -> bool { return a.is_mass_set; });
     t.method("is_mass_set", [](const HepMC3::GenParticleData* a) -> bool { return a->is_mass_set; });
     t.method("is_mass_set", [](HepMC3::GenParticleData* a) -> bool { return a->is_mass_set; });
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenParticleData.h:27:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenParticleData.h:27:16
     // signature to use in the veto list: HepMC3::GenParticleData::is_mass_set
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding is_mass_set! methods to provide write access to the field is_mass_set (" __HERE__ ")");
@@ -75,13 +75,13 @@ struct JlHepMC3_GenParticleData: public Wrapper {
     t.method("is_mass_set!", [](HepMC3::GenParticleData* a, bool val) -> bool { return a->is_mass_set = val; });
 
     DEBUG_MSG("Adding mass methods  to provide read access to the field mass (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenParticleData.h:28:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenParticleData.h:28:16
     // signature to use in the veto list: HepMC3::GenParticleData::mass
     t.method("mass", [](const HepMC3::GenParticleData& a) -> double { return a.mass; });
     t.method("mass", [](HepMC3::GenParticleData& a) -> double { return a.mass; });
     t.method("mass", [](const HepMC3::GenParticleData* a) -> double { return a->mass; });
     t.method("mass", [](HepMC3::GenParticleData* a) -> double { return a->mass; });
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenParticleData.h:28:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenParticleData.h:28:16
     // signature to use in the veto list: HepMC3::GenParticleData::mass
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding mass! methods to provide write access to the field mass (" __HERE__ ")");
@@ -91,13 +91,13 @@ struct JlHepMC3_GenParticleData: public Wrapper {
     t.method("mass!", [](HepMC3::GenParticleData* a, double val) -> double { return a->mass = val; });
 
     DEBUG_MSG("Adding momentum methods  to provide read access to the field momentum (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenParticleData.h:29:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenParticleData.h:29:16
     // signature to use in the veto list: HepMC3::GenParticleData::momentum
     t.method("momentum", [](const HepMC3::GenParticleData& a) -> const HepMC3::FourVector& { return a.momentum; });
     t.method("momentum", [](HepMC3::GenParticleData& a) -> HepMC3::FourVector& { return a.momentum; });
     t.method("momentum", [](const HepMC3::GenParticleData* a) -> const HepMC3::FourVector& { return a->momentum; });
     t.method("momentum", [](HepMC3::GenParticleData* a) -> HepMC3::FourVector& { return a->momentum; });
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenParticleData.h:29:16
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenParticleData.h:29:16
     // signature to use in the veto list: HepMC3::GenParticleData::momentum
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding momentum! methods to provide write access to the field momentum (" __HERE__ ")");

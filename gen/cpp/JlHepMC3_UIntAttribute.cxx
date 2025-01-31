@@ -18,7 +18,7 @@ struct JlHepMC3_UIntAttribute: public Wrapper {
 
   JlHepMC3_UIntAttribute(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::UIntAttribute (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:528:7
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:528:7
     jlcxx::TypeWrapper<HepMC3::UIntAttribute>  t = jlModule.add_type<HepMC3::UIntAttribute>("HepMC3!UIntAttribute",
       jlcxx::julia_base_type<HepMC3::Attribute>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::UIntAttribute>>(new jlcxx::TypeWrapper<HepMC3::UIntAttribute>(jlModule, t));
@@ -30,27 +30,27 @@ struct JlHepMC3_UIntAttribute: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepMC3::UIntAttribute::UIntAttribute(unsigned int) (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:535:5
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:535:5
     t.constructor<unsigned int>(/*finalize=*/jlcxx::finalize_policy::yes);
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::UIntAttribute::from_string(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::UIntAttribute::from_string(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:538:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:538:10
     t.method("from_string", static_cast<bool (HepMC3::UIntAttribute::*)(const std::string &) >(&HepMC3::UIntAttribute::from_string));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::UIntAttribute::to_string(std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::UIntAttribute::to_string(std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:545:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:545:10
     t.method("to_string", static_cast<bool (HepMC3::UIntAttribute::*)(std::string &)  const>(&HepMC3::UIntAttribute::to_string));
 
     DEBUG_MSG("Adding wrapper for unsigned int HepMC3::UIntAttribute::value() (" __HERE__ ")");
     // signature to use in the veto list: unsigned int HepMC3::UIntAttribute::value()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:551:18
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:551:18
     t.method("value", static_cast<unsigned int (HepMC3::UIntAttribute::*)()  const>(&HepMC3::UIntAttribute::value));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::UIntAttribute::set_value(const unsigned int &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::UIntAttribute::set_value(const unsigned int &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:556:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:556:10
     t.method("set_value", static_cast<void (HepMC3::UIntAttribute::*)(const unsigned int &) >(&HepMC3::UIntAttribute::set_value));
   }
 

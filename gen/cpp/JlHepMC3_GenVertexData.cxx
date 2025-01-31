@@ -17,7 +17,7 @@ struct JlHepMC3_GenVertexData: public Wrapper {
 
   JlHepMC3_GenVertexData(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::GenVertexData (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Data/GenVertexData.h:22:8
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Data/GenVertexData.h:22:8
     jlcxx::TypeWrapper<HepMC3::GenVertexData>  t = jlModule.add_type<HepMC3::GenVertexData>("HepMC3!GenVertexData");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::GenVertexData>>(new jlcxx::TypeWrapper<HepMC3::GenVertexData>(jlModule, t));
   }

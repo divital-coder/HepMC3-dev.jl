@@ -18,7 +18,7 @@ struct JlHepMC3_BoolAttribute: public Wrapper {
 
   JlHepMC3_BoolAttribute(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::BoolAttribute (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:660:7
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:660:7
     jlcxx::TypeWrapper<HepMC3::BoolAttribute>  t = jlModule.add_type<HepMC3::BoolAttribute>("HepMC3!BoolAttribute",
       jlcxx::julia_base_type<HepMC3::Attribute>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::BoolAttribute>>(new jlcxx::TypeWrapper<HepMC3::BoolAttribute>(jlModule, t));
@@ -30,27 +30,27 @@ struct JlHepMC3_BoolAttribute: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepMC3::BoolAttribute::BoolAttribute(bool) (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:667:5
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:667:5
     t.constructor<bool>(/*finalize=*/jlcxx::finalize_policy::yes);
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::BoolAttribute::from_string(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::BoolAttribute::from_string(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:670:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:670:10
     t.method("from_string", static_cast<bool (HepMC3::BoolAttribute::*)(const std::string &) >(&HepMC3::BoolAttribute::from_string));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::BoolAttribute::to_string(std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::BoolAttribute::to_string(std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:679:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:679:10
     t.method("to_string", static_cast<bool (HepMC3::BoolAttribute::*)(std::string &)  const>(&HepMC3::BoolAttribute::to_string));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::BoolAttribute::value() (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::BoolAttribute::value()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:685:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:685:10
     t.method("value", static_cast<bool (HepMC3::BoolAttribute::*)()  const>(&HepMC3::BoolAttribute::value));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::BoolAttribute::set_value(const bool &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::BoolAttribute::set_value(const bool &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:690:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:690:10
     t.method("set_value", static_cast<void (HepMC3::BoolAttribute::*)(const bool &) >(&HepMC3::BoolAttribute::set_value));
   }
 

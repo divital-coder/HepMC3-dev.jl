@@ -18,7 +18,7 @@ struct JlHepMC3_VectorULongAttribute: public Wrapper {
 
   JlHepMC3_VectorULongAttribute(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::VectorULongAttribute (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:944:7
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:944:7
     jlcxx::TypeWrapper<HepMC3::VectorULongAttribute>  t = jlModule.add_type<HepMC3::VectorULongAttribute>("HepMC3!VectorULongAttribute",
       jlcxx::julia_base_type<HepMC3::Attribute>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::VectorULongAttribute>>(new jlcxx::TypeWrapper<HepMC3::VectorULongAttribute>(jlModule, t));
@@ -30,27 +30,27 @@ struct JlHepMC3_VectorULongAttribute: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepMC3::VectorULongAttribute::VectorULongAttribute(std::vector<unsigned long>) (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:951:5
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:951:5
     t.constructor<std::vector<unsigned long>>(/*finalize=*/jlcxx::finalize_policy::yes);
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::VectorULongAttribute::from_string(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::VectorULongAttribute::from_string(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:954:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:954:10
     t.method("from_string", static_cast<bool (HepMC3::VectorULongAttribute::*)(const std::string &) >(&HepMC3::VectorULongAttribute::from_string));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::VectorULongAttribute::to_string(std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::VectorULongAttribute::to_string(std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:964:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:964:10
     t.method("to_string", static_cast<bool (HepMC3::VectorULongAttribute::*)(std::string &)  const>(&HepMC3::VectorULongAttribute::to_string));
 
     DEBUG_MSG("Adding wrapper for std::vector<unsigned long> HepMC3::VectorULongAttribute::value() (" __HERE__ ")");
     // signature to use in the veto list: std::vector<unsigned long> HepMC3::VectorULongAttribute::value()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:971:32
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:971:32
     t.method("value", static_cast<std::vector<unsigned long> (HepMC3::VectorULongAttribute::*)()  const>(&HepMC3::VectorULongAttribute::value));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::VectorULongAttribute::set_value(const std::vector<unsigned long> &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::VectorULongAttribute::set_value(const std::vector<unsigned long> &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/Attribute.h:976:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/Attribute.h:976:10
     t.method("set_value", static_cast<void (HepMC3::VectorULongAttribute::*)(const std::vector<unsigned long> &) >(&HepMC3::VectorULongAttribute::set_value));
   }
 

@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HepMC3Wrap.dir/link.d"
   "CMakeFiles/HepMC3Wrap.dir/cpp/HepMC3Wrap.cxx.o"
   "CMakeFiles/HepMC3Wrap.dir/cpp/HepMC3Wrap.cxx.o.d"
   "CMakeFiles/HepMC3Wrap.dir/cpp/HepMC3WrapImpl.cpp.o"
@@ -74,8 +73,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/HepMC3Wrap.dir/cpp/Jlstd_basic_string.cxx.o.d"
   "CMakeFiles/HepMC3Wrap.dir/cpp/jlHepMC3.cxx.o"
   "CMakeFiles/HepMC3Wrap.dir/cpp/jlHepMC3.cxx.o.d"
+  "lib/libHepMC3Wrap.dylib"
   "lib/libHepMC3Wrap.pdb"
-  "lib/libHepMC3Wrap.so"
 )
 
 # Per-language clean rules from dependency scanning.

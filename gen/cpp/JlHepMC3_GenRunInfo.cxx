@@ -17,7 +17,7 @@ struct JlHepMC3_GenRunInfo: public Wrapper {
 
   JlHepMC3_GenRunInfo(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::GenRunInfo (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenRunInfo.h:33:7
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenRunInfo.h:33:7
     jlcxx::TypeWrapper<HepMC3::GenRunInfo>  t = jlModule.add_type<HepMC3::GenRunInfo>("HepMC3!GenRunInfo");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::GenRunInfo>>(new jlcxx::TypeWrapper<HepMC3::GenRunInfo>(jlModule, t));
   }

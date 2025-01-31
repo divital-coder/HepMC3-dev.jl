@@ -18,7 +18,7 @@ struct JlHepMC3_GenCrossSection: public Wrapper {
 
   JlHepMC3_GenCrossSection(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepMC3::GenCrossSection (" __HERE__ ")");
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:42:7
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:42:7
     jlcxx::TypeWrapper<HepMC3::GenCrossSection>  t = jlModule.add_type<HepMC3::GenCrossSection>("HepMC3!GenCrossSection",
       jlcxx::julia_base_type<HepMC3::Attribute>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepMC3::GenCrossSection>>(new jlcxx::TypeWrapper<HepMC3::GenCrossSection>(jlModule, t));
@@ -30,17 +30,17 @@ struct JlHepMC3_GenCrossSection: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenCrossSection::from_string(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenCrossSection::from_string(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:59:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:59:10
     t.method("from_string", static_cast<bool (HepMC3::GenCrossSection::*)(const std::string &) >(&HepMC3::GenCrossSection::from_string));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenCrossSection::to_string(std::string &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenCrossSection::to_string(std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:62:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:62:10
     t.method("to_string", static_cast<bool (HepMC3::GenCrossSection::*)(std::string &)  const>(&HepMC3::GenCrossSection::to_string));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenCrossSection::set_cross_section(const double &, const double &, const long &, const long &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenCrossSection::set_cross_section(const double &, const double &, const long &, const long &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:73:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:73:10
     t.method("set_cross_section", static_cast<void (HepMC3::GenCrossSection::*)(const double &, const double &, const long &, const long &) >(&HepMC3::GenCrossSection::set_cross_section));
     t.method("set_cross_section", [](HepMC3::GenCrossSection& a, const double & arg0, const double & arg1)->void { a.set_cross_section(arg0, arg1); });
     t.method("set_cross_section", [](HepMC3::GenCrossSection& a, const double & arg0, const double & arg1, const long & arg2)->void { a.set_cross_section(arg0, arg1, arg2); });
@@ -49,7 +49,7 @@ struct JlHepMC3_GenCrossSection: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenCrossSection::set_cross_section(const std::vector<double> &, const std::vector<double> &, const long &, const long &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenCrossSection::set_cross_section(const std::vector<double> &, const std::vector<double> &, const long &, const long &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:77:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:77:10
     t.method("set_cross_section", static_cast<void (HepMC3::GenCrossSection::*)(const std::vector<double> &, const std::vector<double> &, const long &, const long &) >(&HepMC3::GenCrossSection::set_cross_section));
     t.method("set_cross_section", [](HepMC3::GenCrossSection& a, const std::vector<double> & arg0, const std::vector<double> & arg1)->void { a.set_cross_section(arg0, arg1); });
     t.method("set_cross_section", [](HepMC3::GenCrossSection& a, const std::vector<double> & arg0, const std::vector<double> & arg1, const long & arg2)->void { a.set_cross_section(arg0, arg1, arg2); });
@@ -58,74 +58,74 @@ struct JlHepMC3_GenCrossSection: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for const std::vector<double> & HepMC3::GenCrossSection::xsecs() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<double> & HepMC3::GenCrossSection::xsecs()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:81:32
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:81:32
     t.method("xsecs", static_cast<const std::vector<double> & (HepMC3::GenCrossSection::*)()  const>(&HepMC3::GenCrossSection::xsecs));
 
     DEBUG_MSG("Adding wrapper for const std::vector<double> & HepMC3::GenCrossSection::xsec_errs() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<double> & HepMC3::GenCrossSection::xsec_errs()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:85:32
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:85:32
     t.method("xsec_errs", static_cast<const std::vector<double> & (HepMC3::GenCrossSection::*)()  const>(&HepMC3::GenCrossSection::xsec_errs));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenCrossSection::set_accepted_events(const long &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenCrossSection::set_accepted_events(const long &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:90:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:90:10
     t.method("set_accepted_events", static_cast<void (HepMC3::GenCrossSection::*)(const long &) >(&HepMC3::GenCrossSection::set_accepted_events));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenCrossSection::set_attempted_events(const long &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenCrossSection::set_attempted_events(const long &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:96:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:96:10
     t.method("set_attempted_events", static_cast<void (HepMC3::GenCrossSection::*)(const long &) >(&HepMC3::GenCrossSection::set_attempted_events));
 
     DEBUG_MSG("Adding wrapper for long HepMC3::GenCrossSection::get_accepted_events() (" __HERE__ ")");
     // signature to use in the veto list: long HepMC3::GenCrossSection::get_accepted_events()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:102:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:102:10
     t.method("get_accepted_events", static_cast<long (HepMC3::GenCrossSection::*)()  const>(&HepMC3::GenCrossSection::get_accepted_events));
 
     DEBUG_MSG("Adding wrapper for long HepMC3::GenCrossSection::get_attempted_events() (" __HERE__ ")");
     // signature to use in the veto list: long HepMC3::GenCrossSection::get_attempted_events()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:108:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:108:10
     t.method("get_attempted_events", static_cast<long (HepMC3::GenCrossSection::*)()  const>(&HepMC3::GenCrossSection::get_attempted_events));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenCrossSection::set_xsec(const std::string &, const double &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenCrossSection::set_xsec(const std::string &, const double &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:115:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:115:10
     t.method("set_xsec", static_cast<void (HepMC3::GenCrossSection::*)(const std::string &, const double &) >(&HepMC3::GenCrossSection::set_xsec));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenCrossSection::set_xsec(const unsigned long &, const double &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenCrossSection::set_xsec(const unsigned long &, const double &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:124:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:124:10
     t.method("set_xsec", static_cast<void (HepMC3::GenCrossSection::*)(const unsigned long &, const double &) >(&HepMC3::GenCrossSection::set_xsec));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenCrossSection::set_xsec_err(const std::string &, const double &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenCrossSection::set_xsec_err(const std::string &, const double &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:132:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:132:10
     t.method("set_xsec_err", static_cast<void (HepMC3::GenCrossSection::*)(const std::string &, const double &) >(&HepMC3::GenCrossSection::set_xsec_err));
 
     DEBUG_MSG("Adding wrapper for void HepMC3::GenCrossSection::set_xsec_err(const unsigned long &, const double &) (" __HERE__ ")");
     // signature to use in the veto list: void HepMC3::GenCrossSection::set_xsec_err(const unsigned long &, const double &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:141:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:141:10
     t.method("set_xsec_err", static_cast<void (HepMC3::GenCrossSection::*)(const unsigned long &, const double &) >(&HepMC3::GenCrossSection::set_xsec_err));
 
     DEBUG_MSG("Adding wrapper for double HepMC3::GenCrossSection::xsec(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: double HepMC3::GenCrossSection::xsec(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:149:12
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:149:12
     t.method("xsec", static_cast<double (HepMC3::GenCrossSection::*)(const std::string &)  const>(&HepMC3::GenCrossSection::xsec));
 
     DEBUG_MSG("Adding wrapper for double HepMC3::GenCrossSection::xsec(const unsigned long &) (" __HERE__ ")");
     // signature to use in the veto list: double HepMC3::GenCrossSection::xsec(const unsigned long &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:158:12
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:158:12
     t.method("xsec", static_cast<double (HepMC3::GenCrossSection::*)(const unsigned long &)  const>(&HepMC3::GenCrossSection::xsec));
     t.method("xsec", [](HepMC3::GenCrossSection const& a)->double { return a.xsec(); });
     t.method("xsec", [](HepMC3::GenCrossSection const* a)->double { return a->xsec(); });
 
     DEBUG_MSG("Adding wrapper for double HepMC3::GenCrossSection::xsec_err(const std::string &) (" __HERE__ ")");
     // signature to use in the veto list: double HepMC3::GenCrossSection::xsec_err(const std::string &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:167:12
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:167:12
     t.method("xsec_err", static_cast<double (HepMC3::GenCrossSection::*)(const std::string &)  const>(&HepMC3::GenCrossSection::xsec_err));
 
     DEBUG_MSG("Adding wrapper for double HepMC3::GenCrossSection::xsec_err(const unsigned long &) (" __HERE__ ")");
     // signature to use in the veto list: double HepMC3::GenCrossSection::xsec_err(const unsigned long &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:176:12
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:176:12
     t.method("xsec_err", static_cast<double (HepMC3::GenCrossSection::*)(const unsigned long &)  const>(&HepMC3::GenCrossSection::xsec_err));
     t.method("xsec_err", [](HepMC3::GenCrossSection const& a)->double { return a.xsec_err(); });
     t.method("xsec_err", [](HepMC3::GenCrossSection const* a)->double { return a->xsec_err(); });
@@ -133,19 +133,19 @@ struct JlHepMC3_GenCrossSection: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenCrossSection::operator==(const HepMC3::GenCrossSection &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenCrossSection::operator==(const HepMC3::GenCrossSection &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:182:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:182:10
     t.method("==", static_cast<bool (HepMC3::GenCrossSection::*)(const HepMC3::GenCrossSection &)  const>(&HepMC3::GenCrossSection::operator==));
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenCrossSection::operator!=(const HepMC3::GenCrossSection &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenCrossSection::operator!=(const HepMC3::GenCrossSection &)
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:183:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:183:10
     t.method("!=", static_cast<bool (HepMC3::GenCrossSection::*)(const HepMC3::GenCrossSection &)  const>(&HepMC3::GenCrossSection::operator!=));
 
     module_.unset_override_module();
 
     DEBUG_MSG("Adding wrapper for bool HepMC3::GenCrossSection::is_valid() (" __HERE__ ")");
     // signature to use in the veto list: bool HepMC3::GenCrossSection::is_valid()
-    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenCrossSection.h:184:10
+    // defined in /Users/apple/.julia/artifacts/e594d2eb58d058362f1ddc846f42621345899c63/include/HepMC3/GenCrossSection.h:184:10
     t.method("is_valid", static_cast<bool (HepMC3::GenCrossSection::*)()  const>(&HepMC3::GenCrossSection::is_valid));
   }
 
