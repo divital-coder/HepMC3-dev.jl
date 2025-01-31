@@ -13,6 +13,7 @@ lib/libHepMC3Wrap.so: \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_FourVector.cxx.o \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenCrossSection.cxx.o \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEvent.cxx.o \
+  CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEventData.cxx.o \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenHeavyIon.cxx.o \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenParticle.cxx.o \
   CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenParticleData.cxx.o \
@@ -94,6 +95,8 @@ CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_FourVector.cxx.o:
 CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenCrossSection.cxx.o:
 
 CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEvent.cxx.o:
+
+CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenEventData.cxx.o:
 
 CMakeFiles/HepMC3Wrap.dir/cpp/JlHepMC3_GenHeavyIon.cxx.o:
 

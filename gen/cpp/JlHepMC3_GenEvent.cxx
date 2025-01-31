@@ -315,6 +315,16 @@ struct JlHepMC3_GenEvent: public Wrapper {
     // signature to use in the veto list: void HepMC3::GenEvent::add_beam_particle(HepMC3::GenParticlePtr)
     // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:335:10
     t.method("add_beam_particle", static_cast<void (HepMC3::GenEvent::*)(HepMC3::GenParticlePtr) >(&HepMC3::GenEvent::add_beam_particle));
+
+    DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::write_data(HepMC3::GenEventData &) (" __HERE__ ")");
+    // signature to use in the veto list: void HepMC3::GenEvent::write_data(HepMC3::GenEventData &)
+    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:347:10
+    t.method("write_data", static_cast<void (HepMC3::GenEvent::*)(HepMC3::GenEventData &)  const>(&HepMC3::GenEvent::write_data));
+
+    DEBUG_MSG("Adding wrapper for void HepMC3::GenEvent::read_data(const HepMC3::GenEventData &) (" __HERE__ ")");
+    // signature to use in the veto list: void HepMC3::GenEvent::read_data(const HepMC3::GenEventData &)
+    // defined in /home/hurtbadly/.julia/artifacts/7594d64d7c28f9689b484bf4d09af6dbb8b5123c/include/HepMC3/GenEvent.h:350:10
+    t.method("read_data", static_cast<void (HepMC3::GenEvent::*)(const HepMC3::GenEventData &) >(&HepMC3::GenEvent::read_data));
   }
 
 private:

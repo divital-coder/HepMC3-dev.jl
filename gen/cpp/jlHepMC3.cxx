@@ -38,6 +38,7 @@ class JlHepMC3_VectorStringAttribute;
 class JlHepMC3_GenHeavyIon;
 class JlHepMC3_GenPdfInfo;
 class JlHepMC3_GenCrossSection;
+class JlHepMC3_GenEventData;
 class JlHepMC3_GenVertex;
 class JlHepMC3_GenVertexData;
 class JlHepMC3_GenParticleData;
@@ -72,6 +73,7 @@ std::shared_ptr<Wrapper> newJlHepMC3_VectorStringAttribute(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlHepMC3_GenHeavyIon(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlHepMC3_GenPdfInfo(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlHepMC3_GenCrossSection(jlcxx::Module&);
+std::shared_ptr<Wrapper> newJlHepMC3_GenEventData(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlHepMC3_GenVertex(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlHepMC3_GenVertexData(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlHepMC3_GenParticleData(jlcxx::Module&);
@@ -141,6 +143,7 @@ throw_if_version_incompatibility();
     std::shared_ptr<Wrapper>(newJlHepMC3_GenHeavyIon(jlModule)),
     std::shared_ptr<Wrapper>(newJlHepMC3_GenPdfInfo(jlModule)),
     std::shared_ptr<Wrapper>(newJlHepMC3_GenCrossSection(jlModule)),
+    std::shared_ptr<Wrapper>(newJlHepMC3_GenEventData(jlModule)),
     std::shared_ptr<Wrapper>(newJlHepMC3_GenVertex(jlModule)),
     std::shared_ptr<Wrapper>(newJlHepMC3_GenVertexData(jlModule)),
     std::shared_ptr<Wrapper>(newJlHepMC3_GenParticleData(jlModule)),
