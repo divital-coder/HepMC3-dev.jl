@@ -10,6 +10,11 @@ extern "C" {
         return new HepMC3::GenEvent(static_cast<HepMC3::Units::MomentumUnit>(units));
     }
 
+    void* create_particle(void* momentum, int pdg_id, int status) {
+        auto* mom = static_cast<HepMC3::FourVector*>(momentum);
+        return new HepMC3::GenParticle(*mom, pdg_id, status);
+    }
+
     double fourvector_px(void* v) {
         return static_cast<HepMC3::FourVector*>(v)->px();
     }
@@ -24,5 +29,26 @@ extern "C" {
 
     double fourvector_e(void* v) {
         return static_cast<HepMC3::FourVector*>(v)->e();
+    }
+
+    int particle_pid(void* particle) {
+        return static_cast<HepMC3::GenParticle*>(particle)->pid();
+    }
+
+    int particle_status(void* particle) {
+        return static_cast<HepMC3::GenParticle*>(particle)->status();
+    }
+
+    void* particle_momentum(void* particle) {
+        return new HepMC3::FourVector(static_cast<HepMC3::GenParticle*>(particle)->momentum());
+    }
+
+    void set_particle_status(void* particle, int status) {
+        static_cast<HepMC3::GenParticle*>(particle)->set_status(status);
+    }
+
+    void set_particle_momentum(void* particle, void* momentum) {
+        auto* mom = static_cast<HepMC3::FourVector*>(momentum);
+        static_cast<HepMC3::GenParticle*>(particle)->set_momentum(*mom);
     }
 }

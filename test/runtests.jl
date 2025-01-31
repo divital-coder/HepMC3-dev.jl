@@ -49,3 +49,36 @@ end
     end
 end
 
+@testset "HepMC3.jl" begin
+    # ... existing tests ...
+
+    @testset "GenParticle" begin
+        # Create a particle
+        mom = FourVector(1.0, 2.0, 3.0, 4.0)
+        p = GenParticle(mom, 11, 1)  # electron with status 1
+        
+        # Test basic properties
+        @test pid(p) == 11
+        @test status(p) == 1
+        
+        # Test momentum
+        pmom = momentum(p)
+        @test px(pmom) ≈ 1.0
+        @test py(pmom) ≈ 2.0
+        @test pz(pmom) ≈ 3.0
+        @test e(pmom) ≈ 4.0
+        
+        # Test setters
+        set_status!(p, 2)
+        @test status(p) == 2
+        
+        new_mom = FourVector(5.0, 6.0, 7.0, 8.0)
+        set_momentum!(p, new_mom)
+        updated_mom = momentum(p)
+        @test px(updated_mom) ≈ 5.0
+        @test py(updated_mom) ≈ 6.0
+        @test pz(updated_mom) ≈ 7.0
+        @test e(updated_mom) ≈ 8.0
+    end
+end
+
