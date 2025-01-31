@@ -26,13 +26,18 @@ if isfile(joinpath(gendir, "jl/src/HepMC3-export.jl"))
 end
 
 include("HepMC3Utils.jl")
-
 # Define the abstract type for our wrapper
 abstract type AbstractHepMC3Type end
+# Replace all type definitions with these versions:
 
-# Define concrete types
 mutable struct FourVector <: AbstractHepMC3Type
     ptr::Ptr{Cvoid}
+    
+    # Inner constructor
+    function FourVector(ptr::Ptr{Cvoid})
+        ptr == C_NULL && return nothing
+        new(ptr)
+    end
 end
 
 mutable struct GenEvent <: AbstractHepMC3Type
@@ -47,8 +52,63 @@ end
 
 mutable struct GenParticle <: AbstractHepMC3Type
     ptr::Ptr{Cvoid}
+    
+    # Inner constructor
+    function GenParticle(ptr::Ptr{Cvoid})
+        ptr == C_NULL && return nothing
+        new(ptr)
+    end
 end
 
+mutable struct GenVertex <: AbstractHepMC3Type
+    ptr::Ptr{Cvoid}
+    
+    # Inner constructor
+    function GenVertex(ptr::Ptr{Cvoid})
+        ptr == C_NULL && return nothing
+        new(ptr)
+    end
+end
+
+mutable struct GenCrossSection <: AbstractHepMC3Type
+    ptr::Ptr{Cvoid}
+    
+    # Inner constructor
+    function GenCrossSection(ptr::Ptr{Cvoid})
+        ptr == C_NULL && return nothing
+        new(ptr)
+    end
+end
+
+mutable struct GenPdfInfo <: AbstractHepMC3Type
+    ptr::Ptr{Cvoid}
+    
+    # Inner constructor
+    function GenPdfInfo(ptr::Ptr{Cvoid})
+        ptr == C_NULL && return nothing
+        new(ptr)
+    end
+end
+
+mutable struct GenHeavyIon <: AbstractHepMC3Type
+    ptr::Ptr{Cvoid}
+    
+    # Inner constructor
+    function GenHeavyIon(ptr::Ptr{Cvoid})
+        ptr == C_NULL && return nothing
+        new(ptr)
+    end
+end
+
+mutable struct ParticleVector
+    ptr::Ptr{Cvoid}
+    
+    # Inner constructor
+    function ParticleVector(ptr::Ptr{Cvoid})
+        ptr == C_NULL && return nothing
+        new(ptr)
+    end
+end
 
 # Unit enums
 @enum MomentumUnit begin
@@ -164,13 +224,6 @@ function set_momentum!(particle::GenParticle, momentum::FourVector)
           (Ptr{Cvoid}, Ptr{Cvoid}), particle.ptr, momentum.ptr)
 end
 
-
-
-# Add new type
-mutable struct GenVertex <: AbstractHepMC3Type
-    ptr::Ptr{Cvoid}
-end
-
 # Add new functions
 """
     GenVertex()
@@ -223,19 +276,6 @@ Add a vertex to an event.
 function add_vertex!(event::GenEvent, vertex::GenVertex)
     ccall((:add_vertex_to_event, libpath), Cvoid,
           (Ptr{Cvoid}, Ptr{Cvoid}), event.ptr, vertex.ptr)
-end
-
-
-
-
-
-
-
-
-
-# Add new type
-mutable struct GenCrossSection <: AbstractHepMC3Type
-    ptr::Ptr{Cvoid}
 end
 
 """
@@ -317,18 +357,6 @@ function alternative_cross_section_error(xs::GenCrossSection, id::Int)
     #       (Ptr{Cvoid}, Int32), xs.ptr, id)
     @info "HepMC3 doesn't support separate errors for alternative cross-sections."
     return 0.0
-end
-
-
-
-
-
-
-
-
-# Add new type
-mutable struct GenPdfInfo <: AbstractHepMC3Type
-    ptr::Ptr{Cvoid}
 end
 
 """
@@ -445,14 +473,6 @@ function add_pdf_info!(event::GenEvent, pdf::GenPdfInfo)
           (Ptr{Cvoid}, Ptr{Cvoid}), event.ptr, pdf.ptr)
 end
 
-
-
-
-# Add new type
-mutable struct GenHeavyIon <: AbstractHepMC3Type
-    ptr::Ptr{Cvoid}
-end
-
 """
     GenHeavyIon()
 
@@ -561,18 +581,6 @@ Add heavy ion information to an event.
 function add_heavy_ion!(event::GenEvent, hi::GenHeavyIon)
     ccall((:add_heavy_ion_to_event, libpath), Cvoid,
           (Ptr{Cvoid}, Ptr{Cvoid}), event.ptr, hi.ptr)
-end
-
-
-
-
-"""
-    ParticleVector
-
-A vector of particles for efficient traversal and filtering.
-"""
-mutable struct ParticleVector
-    ptr::Ptr{Cvoid}
 end
 
 """
